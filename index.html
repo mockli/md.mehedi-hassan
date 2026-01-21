@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD. Mehedi Hassan Rashel | BNP Leader</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bnp-green: #006a4e;
+      --bnp-red: #d71920;
+      --dark: #1c1c1c;
+      --light: #f5f7f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      background: linear-gradient(135deg, var(--bnp-green), #004f3a);
+      color: #fff;
+      padding: 70px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: #fff;
+      transform: skewY(-3deg);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      animation: fadeUp 1.2s ease;
+    }
+
+    /* ================= NAV ================= */
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--dark);
+      margin: 8px 18px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background: var(--bnp-red);
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* ================= SECTIONS ================= */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: var(--bnp-green);
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 80px;
+      height: 3px;
+      background: var(--bnp-red);
+    }
+
+    /* ================= CARDS ================= */
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* ================= MESSAGE ================= */
+    .message {
+      background: linear-gradient(135deg, var(--bnp-red), #b31217);
+      color: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    }
+
+    /* ================= CONTACT ================= */
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--bnp-green);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
+    }
+
+    /* ================= ANIMATIONS ================= */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.1rem; }
+      section { padding: 50px 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MD. Mehedi Hassan Rashel</h1>
+    <p>Politician | Bangladesh Nationalist Party (BNP)</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#role">Political Role</a></li>
+      <li><a href="#vision">Vision & Message</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p><strong>MD. Mehedi Hassan Rashel</strong> is a dedicated political leader from <strong>Dashmina, Patuakhali, Barishal, Bangladesh</strong>. He is an active member of the <strong>Bangladesh Nationalist Party (BNP)</strong>, committed to democratic values, public service, and national progress.</p>
+      <p><strong>Permanent Residence / Hometown:</strong><br>Dashmina, Patuakhali, Barishal, Bangladesh</p>
+    </div>
+  </section>
+
+  <section id="role">
+    <h2>Political Role</h2>
+    <div class="card">
+      <ul>
+        <li>Chairperson, <strong>Sromik Dol – Dashmina</strong></li>
+        <li>Chairman Election Candidate</li>
+        <li>Grassroots Organizer & Public Representative</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2>Vision & Commitment</h2>
+    <div class="message">
+      <p>??????? ???? ?????? ???, ??? ??????? ????? ????????? ???????? ???????????? ?? (??????)-?? ???? ?????? ????? ?????? ??? ????????, ?????? ??????????? ??? ??????? ???????? ????????? ??????? ????</p>
+      <p>???????????, ?????????? ? ??????? ???????? ???? ????????? ? ?????? ???????? ???? ????? ???? ?????????</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <div class="card contact">
+      <p><strong>Phone:</strong> 01766988233</p>
+      <p><strong>Facebook:</strong><br>
+        <a href="https://www.facebook.com/mehedi.rashel.54" target="_blank">facebook.com/mehedi.rashel.54</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 MD. Mehedi Hassan Rashel | Bangladesh Nationalist Party (BNP)</p>
+  </footer>
+
+</body>
+</html>
